@@ -11,7 +11,13 @@ app.on('ready', () => {
     width: 1920,
     height: 1080,
     resizable: false, // keep it in FullHD!
+    show: false, // don't show the window until everything is loaded
   });
 
   mainWindow.loadURL(`file://${__dirname}/renderer/index.html`);
+
+  mainWindow.on('ready-to-show', () => {
+    mainWindow.show();
+    mainWindow.focus();
+  });
 });
