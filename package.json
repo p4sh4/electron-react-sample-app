@@ -1,0 +1,11 @@
+{
+  "name": "electron-react-sample-app",
+  "version": "0.0.1",
+  "description": "Sample app to demostrate integration of Electron and React that shows data fetched from a NodeJS backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Metelev",
+  "license": "MIT"
+}
