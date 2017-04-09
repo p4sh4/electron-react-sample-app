@@ -8,12 +8,19 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "lint": "./node_modules/.bin/eslint . --ext .jsx .js; exit 0"
   },
   "devDependencies": {
+    "babel-eslint": "^6.1.2",
     "babel-preset-es2016-node5": "^1.1.2",
     "babel-preset-react": "^6.24.1",
-    "electron-prebuilt-compile": "^1.6.2"
+    "electron-prebuilt-compile": "^1.6.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
   },
   "dependencies": {
     "react": "^15.5.3",
