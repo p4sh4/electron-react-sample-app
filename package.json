@@ -1,11 +1,22 @@
 {
   "name": "electron-react-sample-app",
   "version": "0.0.1",
-  "description": "Sample app to demostrate integration of Electron and React that shows data fetched from a NodeJS backend",
-  "main": "index.js",
+  "description": "Sample app to demostrate integration of Electron and React that shows data fetched from a remote server.",
+  "main": "src/app.js",
+  "private": true,
+  "author": "Pavel Metelev <pavelmetelev@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
-  "author": "Pavel Metelev",
-  "license": "MIT"
+  "devDependencies": {
+    "babel-preset-es2016-node5": "^1.1.2",
+    "babel-preset-react": "^6.24.1",
+    "electron-prebuilt-compile": "^1.6.2"
+  },
+  "dependencies": {
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3"
+  }
 }
