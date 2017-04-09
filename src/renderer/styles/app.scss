@@ -24,7 +24,6 @@ body {
   margin: 0;
 }
 
-
 $font-family: Lato, Helvetica, sans-serif;
 $text-color: white;
 
@@ -63,3 +62,38 @@ $h2-font-size: 48px;
     margin-top: 0px;
   }
 }
+
+$border-width: 4px;
+$order-height: 200px - $border-width * 2;
+$order-width: 400px - $border-width * 2;
+$order-background-color: rgba(0, 0, 0, 0.5);
+$border-color: rgba(85, 167, 207, 1);
+
+$vertical-spacing: 13px;
+$horizontal-spacing: 30px;
+
+.orders-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $vertical-spacing $horizontal-spacing;
+}
+
+.order {
+  height: $order-height;
+  width: $order-width;
+  border: $border-width solid $border-color;
+  border-radius: $border-width * 2;
+  background-color: $order-background-color;
+  margin: $vertical-spacing $horizontal-spacing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.thanks-message {
+  font-size: $h2-font-size;
+  text-align: center;
+  margin-top: -7px;
+}
+

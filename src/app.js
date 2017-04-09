@@ -9,8 +9,8 @@ app.on('window-all-closed', () => {
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 1920,
-    height: 1080,
-    resizable: false, // keep it in FullHD!
+    height: 1100,
+    // resizable: false,
     show: false, // don't show the window until everything is loaded
   });
 
