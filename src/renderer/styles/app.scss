@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../../assets/fonts/Lato-Regular.ttf') format ('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../../assets/fonts/Lato-Bold.ttf') format ('truetype');
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('../../assets/images/apple_pie.jpg'); // image from tastemade.com
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+
+$font-family: Lato, Helvetica, sans-serif;
+$text-color: white;
+
+$header-color: rgba(85, 167, 207, 0.7);
+$header-height: 300px;
+
+$h1-font-size: 80px;
+$h2-font-size: 48px;
+
+.main {
+  color: white;
+  font-family: $font-family;
+}
+
+.header {
+  height: $header-height;
+  background-color: $header-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  text-align: center;
+
+  h1 {
+    font-size: $h1-font-size;
+    margin-bottom: 22px;
+  }
+
+  h2 {
+    font-size: $h2-font-size;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-top: 0px;
+  }
+}

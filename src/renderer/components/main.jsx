@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './header';
 
 export default class Main extends React.Component {
   constructor() {
@@ -11,7 +12,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <div className="main">
-        <h1>{this.state.message}</h1>
+        <Header />
       </div>
     );
   }
