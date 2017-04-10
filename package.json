@@ -1,7 +1,7 @@
 {
   "name": "electron-react-sample-app",
   "version": "0.0.1",
-  "description": "Sample app to demostrate integration of Electron and React that shows data fetched from a remote server.",
+  "description": "Sample app to demonstrate the integration of Electron and React that shows data fetched from a remote server.",
   "main": "src/app.js",
   "private": true,
   "author": "Pavel Metelev <pavelmetelev@gmail.com>",
