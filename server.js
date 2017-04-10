@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 // Helper functions
 
 function getRandomInt(min, max) {
@@ -9,7 +7,14 @@ function getRandomInt(min, max) {
 // Main functions
 
 function generateOrders() {
-  const orderCount = getRandomInt(1, 12);
+  let orderCount;
+  // you can pass a -varsize argument to the node server.js command
+  // to have a random 1-12 amount of orders on each load instead of 12
+  if (process.argv[2] === '-varsize') {
+    orderCount = getRandomInt(1, 12);
+  } else {
+    orderCount = 12;
+  }
   const orders = [];
   for (let i = 0; i < orderCount; i += 1) {
     orders.push(getRandomInt(100, 999));
@@ -24,6 +29,7 @@ function ordersObject() {
 }
 
 // Server
+/* eslint-disable no-console */
 
 const http = require('http');
 

@@ -10,7 +10,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 1920,
     height: 1100,
-    // resizable: false,
+    resizable: false,
     show: false, // don't show the window until everything is loaded
   });
 

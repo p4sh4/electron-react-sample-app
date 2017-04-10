@@ -1,15 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class Order extends React.Component {
-  constructor() {
-    super();
-  }
+// a stateless functional component
+const Order = (props) => (
+  <div className="order">
+    {props.number}
+  </div>
+);
 
-  render() {
-    return (
-      <div className="order">
-        {this.props.number}
-      </div>
-    );
-  }
-}
+Order.propTypes = {
+  number: PropTypes.number.isRequired,
+};
+
+export default Order;

@@ -30,8 +30,8 @@ $text-color: white;
 $header-color: rgba(85, 167, 207, 0.7);
 $header-height: 300px;
 
-$h1-font-size: 80px;
-$h2-font-size: 48px;
+$heading-font-size: 80px;
+$primary-font-size: 48px;
 
 .main {
   color: white;
@@ -51,12 +51,12 @@ $h2-font-size: 48px;
   text-align: center;
 
   h1 {
-    font-size: $h1-font-size;
+    font-size: $heading-font-size;
     margin-bottom: 22px;
   }
 
   h2 {
-    font-size: $h2-font-size;
+    font-size: $primary-font-size;
     font-weight: normal;
     letter-spacing: 2px;
     margin-top: 0px;
@@ -76,6 +76,7 @@ $horizontal-spacing: 30px;
   display: flex;
   flex-wrap: wrap;
   padding: $vertical-spacing $horizontal-spacing;
+  position: relative;
 }
 
 .order {
@@ -91,9 +92,14 @@ $horizontal-spacing: 30px;
   font-size: 100px;
 }
 
-.thanks-message {
-  font-size: $h2-font-size;
+.message {
+  font-size: $primary-font-size;
   text-align: center;
-  margin-top: -7px;
+  position: absolute;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
