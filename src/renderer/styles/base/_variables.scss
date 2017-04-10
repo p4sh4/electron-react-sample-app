@@ -1,0 +1,28 @@
+// Typography
+
+$font-family              : Lato, Helvetica, sans-serif;
+
+$heading-font-size        : 80px;
+$primary-font-size        : 48px;
+$number-font-size         : 100px;
+
+// Colors
+
+$header-color             : rgba(85, 167, 207, 0.7);
+$text-color               : white;
+$border-color             : rgba(85, 167, 207, 1);
+$order-background-color   : rgba(0, 0, 0, 0.5);
+
+// Dimensions
+
+$header-height            : 300px;
+
+$border-width             : 4px;
+
+$order-height             : 200px - $border-width * 2;
+$order-width              : 400px - $border-width * 2;
+$order-vertical-spacing   : 13px;
+$order-horizontal-spacing : 30px;
+
+
+

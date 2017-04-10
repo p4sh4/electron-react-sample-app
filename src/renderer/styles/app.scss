@@ -1,14 +1,9 @@
-@font-face {
-  font-family: 'Lato';
-  src: url('../../assets/fonts/Lato-Regular.woff') format('woff');
-  font-weight: normal;
-}
+// Imports
 
-@font-face {
-  font-family: 'Lato';
-  src: url('../../assets/fonts/Lato-Bold.woff') format('woff');
-  font-weight: bold;
-}
+@import 'base/fonts';
+@import 'base/variables';
+
+// Base
 
 html {
   height: 100%;
@@ -16,7 +11,7 @@ html {
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('../../assets/images/apple_pie.jpg'); // image from tastemade.com
+              url('../../assets/images/apple_pie.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -24,19 +19,12 @@ body {
   margin: 0;
 }
 
-$font-family: Lato, Helvetica, sans-serif;
-$text-color: white;
-
-$header-color: rgba(85, 167, 207, 0.7);
-$header-height: 300px;
-
-$heading-font-size: 80px;
-$primary-font-size: 48px;
-
 .main {
-  color: white;
+  color: $text-color;
   font-family: $font-family;
 }
+
+// Header
 
 .header {
   height: $header-height;
@@ -59,23 +47,16 @@ $primary-font-size: 48px;
     font-size: $primary-font-size;
     font-weight: normal;
     letter-spacing: 2px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
-$border-width: 4px;
-$order-height: 200px - $border-width * 2;
-$order-width: 400px - $border-width * 2;
-$order-background-color: rgba(0, 0, 0, 0.5);
-$border-color: rgba(85, 167, 207, 1);
-
-$vertical-spacing: 13px;
-$horizontal-spacing: 30px;
+// Orders
 
 .orders-container {
   display: flex;
   flex-wrap: wrap;
-  padding: $vertical-spacing $horizontal-spacing;
+  padding: $order-vertical-spacing $order-horizontal-spacing;
   position: relative;
 }
 
@@ -85,12 +66,14 @@ $horizontal-spacing: 30px;
   border: $border-width solid $border-color;
   border-radius: $border-width * 2;
   background-color: $order-background-color;
-  margin: $vertical-spacing $horizontal-spacing;
+  margin: $order-vertical-spacing $order-horizontal-spacing;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+  font-size: $number-font-size;
 }
+
+// Message
 
 .message {
   font-size: $primary-font-size;
@@ -102,4 +85,3 @@ $horizontal-spacing: 30px;
   left: 0;
   right: 0;
 }
-

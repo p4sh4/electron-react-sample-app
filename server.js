@@ -10,16 +10,18 @@ function generateOrders() {
   let orderCount;
   // you can pass a -varsize argument to the node server.js command
   // to have a random 1-12 amount of orders on each load instead of 12
-  if (process.argv[2] === '-varsize') {
+  if (process.argv[2] === '--varsize') {
     orderCount = getRandomInt(1, 12);
   } else {
     orderCount = 12;
   }
-  const orders = [];
-  for (let i = 0; i < orderCount; i += 1) {
-    orders.push(getRandomInt(100, 999));
+  // use a set to make sure all order numbers are unique
+  const orders = new Set();
+  while (orders.size < orderCount) {
+    orders.add(getRandomInt(100, 999));
   }
-  return orders;
+  const ordersArray = [...orders];
+  return ordersArray;
 }
 
 function ordersObject() {
